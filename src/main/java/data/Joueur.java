@@ -10,20 +10,81 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 
 @Entity
 
 public class Joueur {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long JoueurId;
+	private long joueurId;
 	private long meilleurScore;
 	private Date derniereConnexion;
 	private long classement;
-	List<Article>articles;
+	private long creditGemmes;
+	private long creditTokens;
+	@OneToMany(mappedBy="joueur")
+	private List<Defi> defis;
+	
+	private long nbrParties;
+
+
+	
+	
+	public long getCreditGemmes() {
+		return creditGemmes;
+	}
+
+	public void setCreditGemmes(long creditGemmes) {
+		this.creditGemmes = creditGemmes;
+	}
+
+	public long getCreditTokens() {
+		return creditTokens;
+	}
+
+	public void setCreditTokens(long creditTokens) {
+		this.creditTokens = creditTokens;
+	}
+
+	private List<Article>articles;
 	@ManyToMany
 	  @JoinTable(name="Achat")
 	  public List<Article> getArticles (){ return articles;}
+	
+	private List<Booster> boosters;
+	@ManyToMany
+	  @JoinTable(name="Boosters")
+	  public List<Booster> getBoosters (){ return boosters;}
+	
+	public List<Defi> getDefis() {
+		return defis;
+	}
+
+	public void setDefis(List<Defi> defis) {
+		this.defis = defis;
+	}
+
+	public long getNbrParties() {
+		return nbrParties;
+	}
+
+	public void setNbrParties(long nbrParties) {
+		this.nbrParties = nbrParties;
+	}
+
+	public long getJoueurId() {
+		return joueurId;
+	}
+
+	public void setBoosters(List<Booster> boosters) {
+		this.boosters = boosters;
+	}
+
+	public void setArticles(List<Article> articles) {
+		this.articles = articles;
+	}
+	
 	
 	public long getMeilleurScore() {
 		return meilleurScore;

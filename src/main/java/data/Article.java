@@ -23,6 +23,7 @@ public class Article {
 	private String Type;
 	private String Icone;
 	List<Joueur> joueurs;
+	
     @ManyToMany(mappedBy="articles")
     public List<Joueur> getJoueurs(){return joueurs;}
 
