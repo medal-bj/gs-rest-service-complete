@@ -10,7 +10,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 
 
-@RepositoryRestResource(collectionResourceRel = "classement", path = "classement")
+@RepositoryRestResource(collectionResourceRel = "joueurs", path = "joueurs")
 public interface JoueurRepository extends PagingAndSortingRepository<Joueur,Long>{
 	List<Joueur> findByClassementGreaterThan(@Param("classement") long classement);
 	List<Joueur> findByClassementLessThan(@Param("classement") long classement);
