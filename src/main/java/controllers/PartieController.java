@@ -18,7 +18,7 @@ public class PartieController {
 		JoueurRepository j;
 		BoosterRepository b;
 	    @RequestMapping("/partie")
-	    public void partieController(@RequestParam("id") long id,@RequestParam("gemmes") long gemmes,@RequestParam("tokens") long tokens,@RequestParam("booster")long boosterId){
+	    public void partieController(@RequestParam("id") long id,@RequestParam("gemmes") long gemmes,@RequestParam("tokens") long tokens,@RequestParam("booster")long boosterId,@RequestParam("score")long score){
 	    	Joueur m3alem = j.findByJoueurId(id);
 	    	Booster boost =b.findByBoosterId(boosterId);
 	    	m3alem.setNbrParties(m3alem.getNbrParties()+1);
@@ -27,6 +27,7 @@ public class PartieController {
 	    	m3alem.setBoosters(boosters);
 	    	m3alem.setCreditGemmes(m3alem.getCreditGemmes()+gemmes);
 	    	m3alem.setCreditTokens(m3alem.getCreditTokens()+tokens);
+	    	m3alem.setMeilleurScore(Math.max(m3alem.getMeilleurScore(),score));
 	    	
 	    }
 	    

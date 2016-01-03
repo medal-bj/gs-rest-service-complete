@@ -16,4 +16,5 @@ public interface JoueurRepository extends PagingAndSortingRepository<Joueur,Long
 	List<Joueur> findByClassementLessThan(@Param("classement") long classement);
 	List<Joueur> findByClassementBetween(@Param("classementSup") long classementSup,@Param("classementInf") long classementInf);
 	Joueur findByJoueurId(@Param("joueurId")long joueurId);
+	 List<Joueur> findByJoueurIdOrderByMeilleurScoreDesc(@Param("id")long id);
 }
