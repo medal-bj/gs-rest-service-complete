@@ -1,50 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.1.9" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <interface id="1" language="java" name="controllers.ArticleRepository" project="gs-rest-service-complete" 
-    file="/gs-rest-service-complete/src/main/java/controllers/ArticleRepository.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="234" y="127"/>    
+  <class id="1" language="java" name="hello.JoueursController" project="gs-rest-service-complete" 
+    file="/gs-rest-service-complete/src/main/java/hello/JoueursController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="182" y="244"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </interface>  
-  <interface id="2" language="java" name="controllers.BoosterRepository" project="gs-rest-service-complete" 
-    file="/gs-rest-service-complete/src/main/java/controllers/BoosterRepository.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="231" y="248"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </interface>  
-  <class id="3" language="java" name="controllers.BoutiqueController" project="gs-rest-service-complete" 
-    file="/gs-rest-service-complete/src/main/java/controllers/BoutiqueController.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="215" width="330" x="392" y="67"/>    
-    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="4" language="java" name="controllers.JoueurRepository" project="gs-rest-service-complete" 
-    file="/gs-rest-service-complete/src/main/java/controllers/JoueurRepository.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="283" y="410"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </interface>  
-  <class id="5" language="java" name="controllers.PartieController" project="gs-rest-service-complete" 
-    file="/gs-rest-service-complete/src/main/java/controllers/PartieController.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="593" y="420"/>    
+  <class id="2" language="java" name="hello.BoutiqueController" project="gs-rest-service-complete" 
+    file="/gs-rest-service-complete/src/main/java/hello/BoutiqueController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="808" y="235"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
